@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
+namespace AS2122_4E_INF_GiacchettiManuel_ProvaGestioneArticoli
 {
     static class Program
     {
