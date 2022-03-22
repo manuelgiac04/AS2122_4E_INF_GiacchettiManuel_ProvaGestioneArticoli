@@ -20,6 +20,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
             // TODO: (4) creazione lista articoli
             // ...
+            articoli = new(articolo);
         }
 
         private void btnAggiungiArticolo_Click(object sender, EventArgs e)
@@ -30,6 +31,7 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
 
             if (f.Status == DialogResult.OK)
             {
+                Articolo a = new Articolo(frmArticolo.cont.f descrizione, f.UnitaMisura, f prezzo);
                 // aggiungi l'articolo all'elenco di articoli
                 // TODO: (1) aggiungere l'articolo creato dai dati di frmArticoli nella lista articoli
                 // ...
@@ -57,6 +59,11 @@ namespace AS2122_4E_INF_Prof_ProvaGestioneArticoli
             // Find the string in ListBox.
             int index = lstElenco.FindString(curItem);
 
+
+
+            lblDescrizione.Text = articoli[index].Descrizione;
+                lblUnitaMisura.Text= articoli[index].UnitaMisura;
+            lblPrezzo.Text= articoli[index].Prezzo;
             // TODO: (3) aggiungere visualizzazione dettaglio articolo nelle label
             // ... lblDescrizione.Text = articoli[index].Descrizione;
         }
